@@ -1,0 +1,9 @@
+.voice-reader-container {
+    display: flex;
+    align-items:first baseline;
+    position: relative;
+}
+
+.voice-reader-left {
+    margin-right: 10px; /* Space between the voice reader and the text */
+}

@@ -40,6 +40,7 @@ import { DigitalMarketingCourseComponent } from './digital-marketing-course/digi
 import { GraphicDesignCourseComponent } from './graphic-design-course/graphic-design-course.component';
 import { BookSlotPopupComponent } from './book-slot-popup/book-slot-popup.component';
 import { RegisterFormPopupComponent } from './register-form-popup/register-form-popup.component';
+import { VoiceReaderComponent } from './voice-reader/voice-reader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,6 +74,7 @@ import { RegisterFormPopupComponent } from './register-form-popup/register-form-
     GraphicDesignCourseComponent,
     BookSlotPopupComponent,
     RegisterFormPopupComponent,
+    VoiceReaderComponent,
     ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root' // This makes the service available application-wide
 })
 export class IpAddressService {
-  private ipApiUrl = 'https://api.ipify.org?format=json'; // URL to web API
+  private ipApiUrl = 'http://65.2.81.145:32553'; // URL to web API
 
   constructor(private http: HttpClient) { }
 

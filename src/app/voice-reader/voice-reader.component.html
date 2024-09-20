@@ -1,0 +1,6 @@
+<div class="voice-reader-controls">
+  <button (click)="toggleReading()" title="Start or Pause Reading">
+    <i class="fas" [ngClass]="isSpeaking && !isPaused ? 'fa-pause' : 'fa-play'"></i>
+    <!-- Button will show 'Play' or 'Pause' based on the state -->
+  </button>
+</div>
