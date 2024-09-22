@@ -1,10 +1,14 @@
-# Stage 2: Serve app with nginx server
+# Stage 1: Build Angular application
+FROM node:14 AS build
+WORKDIR /usr/local/app
+COPY . .
+RUN npm install
+RUN npm run build --prod
 
-# Use official nginx image as the base image
+# Stage 2: Serve app with nginx
 FROM nginx:latest
-
-# Copy the build output to replace the default nginx contents.
-COPY --from=build /usr/local/app/dist/* /usr/share/nginx/html
+# Copy the build output from the first stage to the nginx html directory
+COPY --from=build /usr/local/app/dist/ /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
